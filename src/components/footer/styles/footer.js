@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro';
-import screenSize from "../../../utils/cssScreenSize";
 
 export const Container = styled.div`
 	display:flex;
@@ -8,7 +7,7 @@ export const Container = styled.div`
 	max-width: 1000px;
 	flex-direction: column;
 
-	@media (${screenSize.large}){
+	@media (max-width: 1000px){
 		padding: 70px 30px;
 	}
 `
@@ -21,7 +20,7 @@ export const Row = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
 	grid-gap: 15px;
-	@media (${screenSize.large}){
+	@media (max-width:1000px){
 		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
 	}
 `

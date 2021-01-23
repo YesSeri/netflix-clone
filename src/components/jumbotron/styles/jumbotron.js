@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro'
-import  screenSize  from "../../../utils/cssScreenSize";
 
 
 export const Item = styled.div`
@@ -18,14 +17,14 @@ export const Inner = styled.div`
 	margin: auto;
 	width: 100%;
 
-	@media (${screenSize.large}){
+	@media (max-width: 1000px){
 		flex-direction: column;
 	}
 `
 
 export const Pane = styled.div`
 	width: 50%;
-	@media (${screenSize.large})	{
+	@media (max-width: 1000px)	{
 		width: 100%;
 		padding: 0 45px;
 		text-align: center;
@@ -36,7 +35,7 @@ export const Title = styled.h1`
 	line-height:1.1;
 	margin-bottom: 8px;
 
-	@media (${screenSize.small})	{
+	@media (max-width: 600px)	{
 		font-size: 35px;
 	}
 `
@@ -45,7 +44,7 @@ export const SubTitle = styled.h2`
 	font-weight: normal; 
 	line-height: normal;
 
-	@media (${screenSize.small})	{
+	@media (max-width: 600px)	{
 		font-size: 18px;
 	}
 `
@@ -56,7 +55,7 @@ export const Image = styled.img`
 `
 
 export const Container = styled.div`
-	@media (${screenSize.large}){
+	@media (max-width: 1000px){
 		${Item}:last-of-type h2{
 			margin-bottom: 50px;
 		}
