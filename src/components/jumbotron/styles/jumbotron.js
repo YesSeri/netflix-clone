@@ -1,9 +1,6 @@
 import styled from 'styled-components/macro'
+import  screenSize  from "../../../utils/cssScreenSize";
 
-const screenSize = {
-	small: 'max-width: 600px',
-	large: 'max-width: 1000px'
-}
 
 export const Item = styled.div`
 	display:flex;
